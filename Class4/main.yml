@@ -1,0 +1,12 @@
+- hosts: all
+  vars:
+    - db_name: hello
+    - db_user: hello1
+    - db_password: hello123
+  tasks:
+  roles:
+    - apache
+    - packages
+    - php
+    - wordpress
+    - db
